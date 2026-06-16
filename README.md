@@ -1,2 +1,55 @@
-# PST2MBOX
-Herramienta para convertir ficheros PST en el estándar MBOX importable por Thunderbird
+# PST → Thunderbird Converter
+
+Una herramienta de escritorio moderna, rápida y eficiente escrita en Python para convertir archivos de Outlook (`.pst`) al formato `mbox`, permitiendo una migración sencilla a Mozilla Thunderbird.
+
+## 🚀 Características
+* **Conversión Completa:** Procesa carpetas, correos electrónicos y adjuntos.
+* **Soporte HTML/Texto:** Mantiene el formato original del correo (preferencia configurable).
+* **Gestión de Adjuntos:** Extracción automática de adjuntos embebidos en Base64.
+* **Interfaz Moderna:** GUI intuitiva construida con `tkinter` con indicadores de progreso y logs en tiempo real.
+* **Independiente de la plataforma:** Funciona en Linux, macOS y Windows.
+
+## 🛠 Requisitos Previos
+
+Esta aplicación utiliza la librería `pypff` para leer archivos PST. Es necesario instalarla previamente según tu sistema operativo:
+
+### Linux (Ubuntu/Debian)
+```
+sudo apt install python3-pypff
+```
+### Windows
+```
+pip install libpff-python
+```
+**Nota para Windows:** Asegúrate de tener instaladas las Visual Studio Build Tools para compilar las dependencias necesarias.
+## 📦 Instalación y Uso
+### Clonar o descargar este repositorio.
+
+### Instalar dependencias (si es necesario):
+```
+pip install -r requirements.txt
+```
+### Ejecutar la aplicación:
+```
+python pst2mbox.py
+```
+## 📧 Cómo importar a Thunderbird
+Una vez finalizada la conversión, obtendrás archivos .mbox organizados en carpetas. Para importarlos a Thunderbird:
+
+1. Instala el complemento ImportExportTools NG en Thunderbird.
+
+2. Haz clic derecho sobre una carpeta (o "Carpetas locales").
+
+3. Selecciona ImportExportTools NG > Importar archivo mbox.
+
+4. Selecciona el archivo .mbox generado por la herramienta.
+
+## ⚠️ Consideraciones
+**Sobreescritura:** Si la carpeta de destino ya contiene archivos, la aplicación te solicitará confirmación antes de sobrescribirlos.
+
+**Logs:** Si ocurre algún error durante la conversión, el panel lateral derecho mostrará el detalle exacto para su diagnóstico.
+
+## 📝 Licencia
+Este proyecto es de código abierto. Siéntete libre de modificarlo o mejorarlo según tus necesidades.
+
+Desarrollado para facilitar la transición a clientes de correo de código abierto.

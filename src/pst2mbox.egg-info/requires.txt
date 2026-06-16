@@ -1,0 +1,3 @@
+requests
+pandas>=2.0.0
+pypff>=3.0

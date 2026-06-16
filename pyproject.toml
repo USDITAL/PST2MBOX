@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pst2mbox"
+version = "0.1.0"
+authors = [
+  { name="David Martín", email="usdital@gmail.com" },
+]
+description = "Una herramienta de escritorio moderna, rápida y eficiente escrita en Python para convertir archivos de Outlook (`.pst`) al formato `mbox`, permitiendo una migración sencilla a Mozilla Thunderbird."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",  
+    "pandas>=2.0.0",
+	"pypff>=3.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pst2mbox/__init__.py
+src/pst2mbox.egg-info/PKG-INFO
+src/pst2mbox.egg-info/SOURCES.txt
+src/pst2mbox.egg-info/dependency_links.txt
+src/pst2mbox.egg-info/requires.txt
+src/pst2mbox.egg-info/top_level.txt
